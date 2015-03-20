@@ -1,5 +1,5 @@
       var cluster = require('cluster');
-  var logger = require('./server/logger');
+                  var logger = require('./server/logger');
 
     var environment = process.env.NODE_ENV || 'development';
 var shouldUseClustering = ['zqa','zstaging','zproduction-pre','zproduction'].some(function(potentialEnvironment){
