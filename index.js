@@ -1,4 +1,4 @@
-      var cluster = require('cluster');
+         var cluster = require('cluster');
                   var logger = require('./server/logger');
 
     var environment = process.env.NODE_ENV || 'development';
@@ -33,3 +33,4 @@ var shouldUseClustering = ['zqa','zstaging','zproduction-pre','zproduction'].som
   require('./server').app.start();
      cluster.worker && logger('info', 'Worker ' + cluster.worker.id + ' running.');
 }
+vcbcvb
