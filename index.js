@@ -6,7 +6,7 @@ var shouldUseClustering = ['zqa','zstaging','zproduction-pre','zproduction'].som
   return environment === potentialEnvironment;
 });
 
-   if (cluster.isMaster && shouldUseClustering) {
+       if (cluster.isMaster && shouldUseClustering) {
   var cpuCount = require('os').cpus().length;
 
   // Will start the app 4 times on a 4-CPU machine.
